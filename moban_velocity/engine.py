@@ -1,4 +1,3 @@
-import sys
 import codecs
 
 from airspeed import Template
@@ -19,7 +18,7 @@ class EngineVelocity(object):
 
     def get_template_from_string(self, string):
         return Template(string)
-        
+
     def apply_template(self, template, data, output):
         rendered_content = template.merge(data)
         return rendered_content

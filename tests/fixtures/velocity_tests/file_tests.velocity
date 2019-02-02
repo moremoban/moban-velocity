@@ -1,0 +1,8 @@
+Old people:
+#foreach ($person in $people)
+ #if($person.age > 70)
+  $person.name
+ #end
+#end
+
+Third person is $people[2].name
