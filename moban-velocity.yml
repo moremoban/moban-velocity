@@ -8,5 +8,5 @@ current_version: "0.0.1"
 release: "0.0.1"
 copyright_year: 2019
 license: MIT
-dependencies: ["lml>=0.7.0", "airspeed"]
+dependencies: ["lml>=0.0.7", "airspeed"]
 description: "Provide velocity templating capability to moban"

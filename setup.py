@@ -39,7 +39,7 @@ CLASSIFIERS = [
 ]
 
 INSTALL_REQUIRES = [
-    'lml>=0.7.0',
+    'lml>=0.0.7',
     'airspeed',
 ]
 SETUP_COMMANDS = {}
