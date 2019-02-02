@@ -1,0 +1,9 @@
+name: moban-velocity
+organisation: moremoban
+releases:
+- changes:
+  - action: First release
+    details:
+    - Render .velocity, .vtl files for moban
+  date: 02.02.2018
+  version: 0.0.1

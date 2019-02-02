@@ -16,7 +16,15 @@ template in their next documentation endeavour.
 Installation
 ================================================================================
 
-You can get it:
+
+You can install moban-velocity via pip:
+
+.. code-block:: bash
+
+    $ pip install moban-velocity
+
+
+or clone it and install it:
 
 .. code-block:: bash
 
