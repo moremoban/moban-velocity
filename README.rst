@@ -9,9 +9,9 @@ moban-velocity
    :target: https://codecov.io/github/moremoban/moban-velocity
 
 
-.. image:: https://readthedocs.org/projects/moban-velocity/badge/?version=latest
-   :target: http://moban-velocity.readthedocs.org/en/latest/
 
+With `airspeed` for Python 3, this library allows moban users to have velocity
+template in their next documentation endeavour. 
 
 Installation
 ================================================================================

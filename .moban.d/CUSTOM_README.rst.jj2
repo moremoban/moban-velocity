@@ -1,1 +1,9 @@
 {% extends 'README.rst.jj2' %}
+
+{% block documentation_link %}
+{% endblock %}
+
+{% block features %}
+With `airspeed` for Python 3, this library allows moban users to have velocity
+template in their next documentation endeavour. 
+{% endblock %}

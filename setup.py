@@ -8,12 +8,11 @@ from shutil import rmtree
 
 from setuptools import Command, setup, find_packages
 
-from platform import python_implementation
 PY2 = sys.version_info[0] == 2
 PY26 = PY2 and sys.version_info[1] < 7
 
 NAME = 'moban-velocity'
-AUTHOR = 'Ayan Banerjee, C.W. et all'
+AUTHOR = 'Ayan Banerjee, C.W. et al'
 VERSION = '0.0.1'
 EMAIL = 'wangc_2011@hotmail.com'
 LICENSE = 'MIT'
@@ -22,7 +21,7 @@ DESCRIPTION = (
 )
 URL = 'https://github.com/moremoban/moban-velocity'
 DOWNLOAD_URL = '%s/archive/0.0.0.tar.gz' % URL
-FILES = ['README.rst', 'CHANGELOG.rst']
+FILES = ['README.rst', 'CONTRIBUTORS.rst', 'CHANGELOG.rst']
 KEYWORDS = [
     'python',
 ]
@@ -40,12 +39,15 @@ CLASSIFIERS = [
 ]
 
 INSTALL_REQUIRES = [
+    'lml>=0.7.0',
+    'airspeed',
 ]
 SETUP_COMMANDS = {}
 
 
 PACKAGES = find_packages(exclude=['ez_setup', 'examples', 'tests'])
-EXTRAS_REQUIRE = {}
+EXTRAS_REQUIRE = {
+}
 # You do not need to read beyond this line
 PUBLISH_COMMAND = '{0} setup.py sdist bdist_wheel upload -r pypi'.format(
     sys.executable)
