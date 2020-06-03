@@ -5,5 +5,8 @@
 
 {% block features %}
 With `airspeed` for Python 3, this library allows moban users to have velocity
-template in their next documentation endeavour. 
+template in their next documentation endeavour.
+
+{%include "velocity_example.rst.jj2" %}
+
 {% endblock %}

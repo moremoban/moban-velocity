@@ -3,6 +3,9 @@ from moban.externals import file_system
 
 
 class EngineVelocity(object):
+    ACTION_IN_PRESENT_CONTINUOUS_TENSE = "Velocity-templating"
+    ACTION_IN_PAST_TENSE = "Velocity-templated"
+
     def __init__(self, template_fs, options=None):
         """
         template_fs is a multfs instance and gives you the power to load

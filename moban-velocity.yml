@@ -3,9 +3,9 @@ organisation: "moremoban"
 author: "Ayan Banerjee, C.W. et al"
 contact: "wangc_2011@hotmail.com"
 company: "Moremoban dev team and its contributors"
-version: "0.0.1"
-current_version: "0.0.1"
-release: "0.0.1"
+version: "0.0.2"
+current_version: "0.0.2"
+release: "0.0.2"
 copyright_year: 2019-2020
 license: MIT
 dependencies: ["lml>=0.0.7", "airspeed"]

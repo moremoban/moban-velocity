@@ -2,6 +2,12 @@ name: moban-velocity
 organisation: moremoban
 releases:
 - changes:
+  - action: Added
+    details:
+    - Support moban v0.6.0+
+  date: 03.06.2020
+  version: 0.0.2
+- changes:
   - action: First release
     details:
     - Render .velocity, .vtl files for moban

@@ -18,7 +18,52 @@ moban-velocity
 
 
 With `airspeed` for Python 3, this library allows moban users to have velocity
-template in their next documentation endeavour. 
+template in their next documentation endeavour.
+
+Given the following data.json:
+
+.. code-block::
+
+   {"people":
+       [
+           {"name": "Bill", "age": 100},
+           {"name": "Bob", "age": 90},
+           {"name": "Mark", "age": 25}
+       ]
+   }
+
+And given the following velocity.template:
+
+.. code-block::
+
+   Old people:
+   #foreach ($person in $people)
+    #if($person.age > 70)
+     $person.name
+    #end
+   #end
+   
+   Third person is $people[2].name
+
+**moban** can do the template:
+
+.. code-block:: bash
+
+   $ moban --template-type velocity -c data.json -t velocity.template
+   Velocity-templating vo.t to moban.output
+   Velocity-templated 1 file.
+   $ cat moban.output
+   Old people:
+
+   Bill
+ 
+   Bob
+ 
+ 
+   Third person is Mark
+
+
+
 
 Installation
 ================================================================================
