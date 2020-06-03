@@ -6,7 +6,8 @@ company: "Moremoban dev team and its contributors"
 version: "0.0.1"
 current_version: "0.0.1"
 release: "0.0.1"
-copyright_year: 2019
+copyright_year: 2019-2020
 license: MIT
 dependencies: ["lml>=0.0.7", "airspeed"]
 description: "Provide velocity templating capability to moban"
+lint_command: make install_test lint format git-diff-check
