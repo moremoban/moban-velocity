@@ -1,6 +1,6 @@
-from airspeed import Template
-
 from moban.externals import file_system
+
+from airspeed import Template
 
 
 class EngineVelocity(object):

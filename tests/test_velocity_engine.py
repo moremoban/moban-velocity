@@ -17,8 +17,9 @@ def test_velocity_file_test():
     engine = ENGINES.get_engine("velocity", [path], path)
     engine.render_to_file("file_tests.velocity", "file_tests.json", output)
     with open(output, "r") as output_file:
-        expected_path = os.path.join("tests", "fixtures", "velocity_tests",
-                                     "expected_output.txt")
+        expected_path = os.path.join(
+            "tests", "fixtures", "velocity_tests", "expected_output.txt"
+        )
         with open(expected_path) as expected_file:
             expected = expected_file.read()
             content = output_file.read()
