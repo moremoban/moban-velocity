@@ -1,19 +1,24 @@
-import codecs
-
 from airspeed import Template
-import moban.utils as utils
+
+from moban.externals import file_system
 
 
 class EngineVelocity(object):
-    def __init__(self, template_dirs, extensions=None):
-        self.template_dirs = template_dirs
+    def __init__(self, template_fs, options=None):
+        """
+        template_fs is a multfs instance and gives you the power to load
+        a template from equiped template directories.
+        :param fs.multifs.MultiFS template_fs: a MultiFS instance or an FS
+        instance
+        :param options: a dictionary of potential parameters.
+                        not used yet.
+        """
+        self.template_fs = template_fs
 
     def get_template(self, template_file):
-        actual_file = utils.get_template_path(
-            self.template_dirs, template_file
-        )
-        with codecs.open(actual_file, "r", encoding="utf-8") as source:
-            template = Template(source.read())
+        template_file = file_system.to_unicode(template_file)
+        template = self.template_fs.readtext(template_file)
+        template = Template(template)
         return template
 
     def get_template_from_string(self, string):
