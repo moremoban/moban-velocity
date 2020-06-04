@@ -7,5 +7,12 @@ name = 'pypi'
 python_version= '3.6'
 
 [packages]
-    lml>=0.0.7
-    airspeed = "*"
+lml = '>=0.0.7'
+airspeed = "*"
+
+[dev-packages]
+nose = "*"
+mock = "*"
+codecov = "*"
+coverage = "*"
+flake8 = "*"
