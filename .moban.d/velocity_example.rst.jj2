@@ -28,9 +28,6 @@ And given the following velocity.template:
 .. code-block:: bash
 
    $ moban --template-type velocity -c data.json -t velocity.template
-   Velocity-templating vo.t to moban.output
-   Velocity-templated 1 file.
-   $ cat moban.output
    Old people:
 
    Bill
